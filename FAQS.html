@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>POTKIEES!</title>
+
+        <!-- The FavIcon of our Website -->
+		<link rel="icon" href="image/cookie.png">
+	
+		<!-- Custom Style Sheet for Styling -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+		<!-- jQuery UI stylesheet for UI components -->
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	   
+		<!-- jQuery Mobile stylesheet for mobile-friendly UI -->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"> 
+	
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+	
+		<!-- jQuery library (another version) -->
+		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+		<!-- jQuery UI library for UI components -->
+		<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	
+		<!-- Bootstrap JavaScript Bundle with Popper -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+	
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+		
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+		<!-- Bootstrap Icons-->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+	
+		<!-- Font Awesome for scalable vector icons -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+		<!-- Boxicons for simple line icons -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+		<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+	
+		<!--- Google fonts --->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+        
+        <style>
+			/* Footer */
+            .container2
+            {
+                max-width: 1170px;
+                margin:auto;
+				margin-bottom: -50px;
+				margin-top: -25px;
+            }
+
+            .row
+            {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            ul
+            {
+                list-style: none;
+            }
+
+            .footer
+            {
+                background-color: #7F5539;
+                padding: 70px 0;
+				margin-top: -50px;
+            }
+
+            .footer-col
+            {
+                width: 25%;
+                padding: 0 15px;
+            }
+
+            .footer-col h4
+            {
+                font-size: 18px;
+                color: #EDE0D4;
+                text-transform: capitalize;
+                margin-bottom: 35px;
+                font-weight: 500;
+                position: relative;
+            }
+
+            .footer-col h4::before
+            {
+                content: '';
+                position: absolute;
+                left:0;
+                bottom: -10px;
+                background-color: #9C6644;
+                height: 2px;
+                box-sizing: border-box;
+                width: 50px;
+            }
+
+            .footer-col ul li:not(:last-child)
+            {
+                margin-bottom: 10px;
+            }
+
+            .footer-col ul li a
+            {
+                font-size: 16px;
+                text-transform: capitalize;
+                color: #DDB892;
+                text-decoration: none;
+                font-weight: 300;
+                color: #bbbbbb;
+                display: block;
+                transition: all 0.3s ease;
+            }
+
+            .footer-col ul li a:hover
+            {
+                color: #ffffff;
+                padding-left: 8px;
+            }
+
+            .footer-col .social-links a
+            {
+                display: inline-block;
+                height: 40px;
+                width: 40px;
+                background-color:rgba(255,255,255,0.2);
+                margin:0 10px 10px 0;
+                text-align: center;
+                line-height: 40px;
+                border-radius: 50%;
+                color: #EDE0D4;
+                transition: all 0.5s ease;
+            }
+            
+            .footer-col .social-links a:hover
+			{
+                color: #24262b;
+                background-color: #E6CCB2;
+            }
+
+			.trademark
+			{
+				color: #E6CCB2;
+			}
+		</style>
+    </head>
+
+<body>
+
+<section id="Home">
+
+    <nav>
+
+        <div class="logo">
+            <a href="index.html"> <img src="image/logo.png"></a>
+        </div>
+
+        <ul>
+            <li><a href="index.html" class="action"> HOME </a></li>
+            <li><a href="Menu.html"> COOKIES </a></li>
+            <li><a href="Review.html"> REVIEW </a></li>
+            <li><a href="ContactUs.html"> CONTACT US </a></li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="infoHubDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    INFO HUB
+                </a>
+                <div class="dropdown-menu" aria-labelledby="infoHubDropdown">
+                    <a class="dropdown-item" href="#faqs">FAQS</a>
+                    <a class="dropdown-item" href="locguide.html">Location Guide</a>
+                    <a class="dropdown-item" href="Blog.html">Blog</a>
+                </div>
+            </li>
+        </ul>
+        
+        <div class="navb-icons">
+    
+            <div class="fa fa-bars" id="menu-icons"></div>
+            
+                <i class="fa fa-shopping-cart" id="cart-icon" title="Click to see your Cart"></i>
+
+                <a href="LogIn.html" class="sign-icon" title="Sign Out">
+                    <i class="fa fa-sign-out"></i>
+                </a>
+
+                <div class="cart">
+                    <h2 class="cart-title"> MY CART </h2>
+
+                    <div class="cart-content">
+                    </div>
+
+                <div class="total">
+                    <div class="total-title"> Total:</div>
+                    <div class="total-price"> ₱ 0 </div>	
+                </div>
+
+                <button type="button" class="btn-checkout"> Checkout </button>
+                <i class="fa fa-times" id="close-cart"></i>
+            </div>
+        </div>
+    </nav>
+</section>
+
+    <!-- Accordion Section -->
+    <div class="content-wrapper">
+    <section class="main-content">
+        <div class="container-1">
+            <div class="row justify-content-center">
+            <div class="col-md-5">
+
+                <h1 class="text-center">FAQs</h1>
+                <div class="accordion" id="accordionExample">
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            &nbsp;  &nbsp; &nbsp; &nbsp; 
+                            <div class="circle-icon"> <i class="fa fa-question"></i> </div>
+                            <span> &nbsp; What varieties of cookies do you offer? </span> 
+                        </button>
+                    </h2>
+
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body"> 
+                            We offer a delightful range of flavors, including <strong> Sugar Cookie,</strong> <strong> Chocolate Cookie, </strong> <strong> White Cookie, </strong> <strong> Rainbow Cookie, </strong> <strong> Cookies n Cream Cookie, </strong>  and <strong> Mallows Cookie. </strong> </div>
+                        </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            &nbsp;  &nbsp; &nbsp; &nbsp; 
+                            <div class="circle-icon"> <i class="fa fa-question"></i> </div>
+                            <span> &nbsp; What sets your ingredients apart? </span> 
+                        </button>
+                    </h2>
+
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body"> 
+                            We prioritize using only the finest quality ingredients to ensure a superior taste and overall experience with our cookies </div>
+                        </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> 
+                            &nbsp;  &nbsp; &nbsp; &nbsp; 
+                            <div class="circle-icon"> <i class="fa fa-question"></i> </div>
+                            <span>&nbsp; How do I place an order?</span> 
+                        </button>
+                    </h2>
+
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body"> 
+                            You can place an order by reaching out to us through our phone number at <strong> 09666623720 </strong> or via email at <strong> shopatpotkiees.gmail.com. </strong> </div>
+                        </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            &nbsp;  &nbsp; &nbsp; &nbsp; 
+                            <div class="circle-icon"> <i class="fa fa-question"></i> </div>
+                            <span> &nbsp; What's the best way to get updates or <br> &nbsp; promotions?</span> 
+                        </button>
+                    </h2>
+
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                        <div class="accordion-body"> 
+                            Stay updated on our latest offerings, promotions, and new flavors by following us on our social media channels or subscribing to our newsletter. </div>
+                        </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"> 
+                            &nbsp;  &nbsp; &nbsp; &nbsp; 
+                            <div class="circle-icon"> <i class="fa fa-question"></i> </div>
+                            <span>&nbsp; Can I customize an order for a special <br> &nbsp; event or occasion? </span> 
+                        </button>
+                    </h2>
+
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                        <div class="accordion-body"> 
+                            Currently, we don't offer customizations, but we're exploring this for the future. We appreciate your understanding and are happy to help with recommendations from our existing menu.
+                        </div>
+                </div>
+
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- Accordion Section -->
+
+    <!-- Details Section -->
+    <div class="ques">
+        <!-- Tabs -->
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-delivery-tab" data-bs-toggle="pill" data-bs-target="#pills-delivery" type="button" role="tab" aria-controls="pills-delivery"  aria-selected="true">Delivery</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-payment-tab" data-bs-toggle="pill" data-bs-target="#pills-payment" type="button" role="tab" aria-controls="pills-payment" aria-selected="false">Payment Method</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-cancel-tab" data-bs-toggle="pill" data-bs-target="#pills-cancel" type="button" role="tab" aria-controls="pills-cancel" aria-selected="false">Cancellation Policy</button>
+            </li>
+        </ul>
+
+        <!-- Tabs Content -->
+        <div class="tab-content" id="pills-tabContent">
+            <!-- Delivery Content -->
+            <div class="tab-pane fade show active" id="pills-delivery" role="tabpanel" aria-labelledby="pills-delivery-tab">
+                Indulge in the joy of hassle-free cookie delivery with our efficient and reliable services. 
+                From the warmth of our kitchen to your doorstep, we prioritize a seamless experience, ensuring 
+                your sweet cravings are met with convenience and speed. <br><br>
+
+            <strong> Courier Partners: </strong> <br><br>
+
+                <strong> 1.  Grab: </strong> PotKiees Shop <br>
+                <strong> 2.  Lalamove: </strong> PotKiees Shop <br>
+                <strong> 3.  Food Panda: </strong> PotKiees Time! <br><br>
+
+                <strong> Delivery Policy: </strong> <br>
+                Our delivery policy aims to provide a seamless experience for
+                our customers. Please note the following: <br><br>
+
+                <strong> 1. </strong> Delivery times may vary based on your location and the selected courier. <br>
+                <strong> 2. </strong> For any specific delivery requests or concerns, feel free to contact our customer support. <br>
+                <strong> 3. </strong> We strive to ensure your cookies are delivered fresh and in perfect condition. <br>
+                <strong> 4. </strong> Keep an eye out for real-time tracking updates to stay informed about your order's status. <br>
+                <strong> 5. </strong> Enjoy the convenience of multiple payment options for a hassle-free ordering experience. <br><br>
+
+                Thank you for choosing us for your cookie cravings!
+            </div>
+
+            <!-- Payment Method Content -->
+            <div class="tab-pane fade" id="pills-payment" role="tabpanel" aria-labelledby="pills-payment-tab">
+                Explore easy and secure payment options tailored to your preferences, 
+                ensuring a smooth and hassle-free transaction process. <br><br>
+
+                <strong> Payment Methods: </strong><br><br>
+
+                <strong> 1. </strong> Credit/Debit Cards <br>
+                <strong> 2. </strong> Online Banking <br>
+                <strong> 3. </strong> Cash on Delivery (COD) <br>
+                <strong> 4. </strong> In-App Wallet (GCASH, PAYMAYA, PAYPAL) <br><br>
+
+                <strong>Payment Policy: </strong> <br>
+                Our payment policy prioritizes flexibility and security. Transactions 
+                are encrypted for your financial safety, and timely payments are encouraged 
+                for smooth order processing. Please note that COD is available for select 
+                items and regions. Contact our customer support for any payment-related queries.
+            </div>
+
+            <!-- Cancellation Policy Content -->
+            <div class="tab-pane fade" id="pills-cancel" role="tabpanel" aria-labelledby="pills-cancel-tab">
+                <strong> Cancellation Policy: </strong> <br><br>
+
+                <strong> 1. Cancellation Period: </strong> You can cancel your order within 24 hours of placing it for a full refund. <br>
+                <strong> 2. Process: </strong>  Refunds will be processed within 5-7 business days and credited to the original payment method.<br>
+                <strong> 3. Late Cancellations: </strong> Cancellations made after 24 hours may be subject to a cancellation fee. <br>
+                <strong> 4. Product-Specific Policies: </strong> Some products may have specific cancellation conditions. Please refer to the product description for details. <br>
+                <strong> 5.  Support: </strong> For cancellations or to inquire about the status of a cancellation, contact our customer support team at [customer support email/phone]. <br>
+                <strong> 6. Exceptions: </strong> Refunds may not be applicable for certain services or digital products. Check the product details for specific refund conditions. <br>
+                <strong> 7. Modification Option: </strong> If you wish to modify your order instead of canceling, contact our support team for assistance.
+
+                Please review our cancellation policy thoroughly, and feel free to reach out if you have any questions or concerns.
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Details Section -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container2">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Quick Links </h4>
+                    <ul>
+                        <li><a href="Menu.html"> Menu </a></li>
+                        <li><a href="Review.html"> Review </a></li>
+                        <li><a href="ContactUs.html"> Contact Us </a></li>
+                        <li><a href="FAQS.html"> FAQs </a></li>
+                        <li><a href="locguide.html"> Location Guide </a></li>
+                        <li><a href="Blog.html"> Blog </a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="FAQS.html">FAQs</a></li>
+                        <li><a href="FAQS.html">Delivery</a></li>
+                        <li><a href="FAQS.html">Payment Method</a></li>
+                        <li><a href="FAQS.html">Cancellation Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Cookies Flavors</h4>
+                    <ul>
+                        <li><a href="Menu.html">Sugar Cookie</a></li>
+                        <li><a href="Menu.html">Chocolate Cookie</a></li>
+                        <li><a href="Menu.html">White Cookie</a></li>
+                        <li><a href="Menu.html">Rainbow Cookie</a></li>
+                        <li><a href="Menu.html">Cookies n Cream</a></li>
+                        <li><a href="Menu.html">Mallows Cookie</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=100094625809178"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></i></a>
+                        <a href="https://mail.google.com/mail/u/0/#inbox"><i class="bi bi-envelope-at-fill"></i></i></a>
+
+                      <br> <br><br><br><br><br><br>
+                      <div class="trademark">
+                        <p><i class="bi bi-c-circle"></i> All rights reserved | POOTKIEES</span></p>
+                      </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+    <!--- link to js --->
+<script src="js/Potkiees.js"></script>
+
+</body>
+</html>
